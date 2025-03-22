@@ -73,7 +73,7 @@ def update_framework():
     repo_url = "https://github.com/root0emir/USBFDF-Framework.git"
     temp_dir = "framework_update_temp"
     
-    # Windows için komutlar
+    
     commands_windows = [
         f"git clone {repo_url} {temp_dir}",
         f"cd {temp_dir} && git pull",
@@ -81,7 +81,7 @@ def update_framework():
         f"rmdir /S /Q {temp_dir}"
     ]
     
-    # Unix tabanlı sistemler için komutlar
+
     commands_unix = [
         f"git clone {repo_url} {temp_dir}",
         f"cd {temp_dir} && git pull",
@@ -90,10 +90,10 @@ def update_framework():
     ]
 
     try:
-        # Platforma göre uygun komutları seç
+ 
         commands = commands_windows if platform.system() == 'Windows' else commands_unix
         
-        # Komutları sırayla çalıştır
+   
         for command in commands:
             subprocess.run(command, shell=True, check=True)
         
