@@ -1,0 +1,1 @@
+from .detection import get_usb_devices

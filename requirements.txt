@@ -1,0 +1,4 @@
+tsk
+magic
+requests
+pillow
