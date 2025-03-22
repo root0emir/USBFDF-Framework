@@ -6,7 +6,7 @@ import shutil
 import subprocess
 import sys
 
-# Windows özel modülleri için kontrol ve yükleme
+
 if platform.system() == "Windows":
     try:
         import win32api
